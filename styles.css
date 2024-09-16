@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    color: #094859;
+}
+.game-heading {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #61dafb;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.game-container {
+    text-align: center;
+    background-color: #20232a;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #61dafb;
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #21a1f1;
+}
+
+#message {
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#restart {
+    background-color: #61dafb;
+    color: #20232a;
+}
+
+#restart:hover {
+    background-color: #21a1f1;
+}
+
+#toggle-ai {
+    background-color: #61dafb;
+    color: #20232a;
+}
+
+#toggle-ai:hover {
+    background-color: #21a1f1;
+}
+
+#scoreboard p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #ffffff;
+}
